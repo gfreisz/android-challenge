@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'jobsity'
+            keyPassword 'jobsity'
+            storeFile file('jobsity')
+            storePassword 'jobsity'
+        }
+    }
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
-
     defaultConfig {
         applicationId "es.npatarino.android.gotchallenge"
         minSdkVersion 21
@@ -33,5 +40,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
-
 }
