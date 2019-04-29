@@ -35,12 +35,12 @@
                 android:layout_height="wrap_content"
                 >
 
-                <ImageView
+                <com.gjiazhe.scrollparallaximageview.ScrollParallaxImageView
                     android:id="@+id/iv_photo"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/detail_header_height"
-                    android:scaleType="centerCrop"
-                    />
+                    android:src="@drawable/got"
+                    android:scaleType="centerCrop" />
 
             </RelativeLayout>
 

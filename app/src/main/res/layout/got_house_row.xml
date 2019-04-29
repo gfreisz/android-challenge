@@ -8,6 +8,14 @@
         android:layout_height="match_parent"
         />
 
+    <View
+        android:id="@+id/ivGradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_gradient_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/row_gradient"
+        />
+
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
